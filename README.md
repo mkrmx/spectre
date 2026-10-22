@@ -21,6 +21,7 @@ Las dos son de 2 capas, sin barrenos de montaje y con una franja libre de 1 mm e
 docs/   esquemático (PDF/PNG) y logo
 smt/    proyecto KiCad 7 completo, Gerbers, BOM y CPL para ensamble, vistas
 tht/    PCB KiCad 7, Gerbers, lista de componentes, mapa de ensamble
+tools/  scripts para generar, acomodar, rutear y verificar las placas (ver tools/README.md)
 ```
 
 ## Cómo funciona
