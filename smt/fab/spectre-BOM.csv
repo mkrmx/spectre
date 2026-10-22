@@ -1,0 +1,22 @@
+Comment,Designator,Footprint,Manufacturer Part,Descripción,Cantidad,Montaje
+0.33uF 50V X7R,C1,C_0805_2012Metric,CL21B334KBFNNNE (o equivalente),Cerámico 0805 X7R 50 V,1,SMT
+0.1uF 50V X7R,C2,C_0805_2012Metric,CL21B104KBCNNNC (o equivalente),Cerámico 0805 X7R 50 V,1,SMT
+47uF 16V,C3,CP_Elec_5x5.3,Panasonic EEE-1CA470WR,Electrolítico SMD,1,SMT
+22uF 16V,C4,CP_Elec_4x5.4,Panasonic EEE-1CA220WR,Electrolítico SMD,1,SMT
+0.1uF 50V X7R,C5,C_0603_1608Metric,CL10B104KB8NNNC (o equivalente),"Cerámico 0603 X7R 50 V, desacoplo de U2",1,SMT
+22uF 16V X5R,C6,C_0805_2012Metric,"22 µF 0805 X5R, 16 V o más (o equivalente)","Cerámico 0805 X5R, retardo de armado (C6)",1,SMT
+M7,D1,D_SMA,"M7 (1000 V 1 A, SMA)",Diodo rectificador,1,SMT
+1N4148W,"D2,D3,D4",D_SOD-123,1N4148W (SOD-123),Diodo de señal,3,SMT
+MMBT2222A,"Q1,Q2,Q3",SOT-23,MMBT2222A (SOT-23),NPN,3,SMT
+IRLR2905 DPAK,Q4,TO-252-2,IRLR2905TRPBF,"N-MOSFET nivel lógico 55 V, DPAK",1,SMT
+10k,"R1,R2,R3,R4,R8,R10,R11,R12,R18",R_0603_1608Metric,0603WAF1002T5E (o equivalente),Resistencia 0603 1% 1/10 W,9,SMT
+1k,R5,R_0603_1608Metric,0603WAF1001T5E (o equivalente),Resistencia 0603 1% 1/10 W,1,SMT
+100k,"R6,R13,R15,R16,R17",R_0603_1608Metric,0603WAF1003T5E (o equivalente),Resistencia 0603 1% 1/10 W,5,SMT
+1M,R7,R_0603_1608Metric,0603WAF1004T5E (o equivalente),Resistencia 0603 1% 1/10 W,1,SMT
+10k trim 3314J,R9,Potentiometer_Bourns_3314J_Vertical,Bourns 3314J-1-103E,Trimpot 10 kΩ SMD,1,SMT
+68k,R14,R_0603_1608Metric,0603WAF6802T5E (o equivalente),Resistencia 0603 1% 1/10 W,1,SMT
+L78M05 DPAK,U1,TO-252-2,L78M05ABDT-TR,"Regulador 5 V 500 mA, DPAK",1,SMT
+DRV5033FA,U2,SOT-23-3,DRV5033FAQDBZR,"Sensor Hall omnipolar, 3.5 mT, SOT-23 (TI)",1,SMT
+LM393 SOIC-8,U3,SOIC-8_3.9x4.9mm_P1.27mm,LM393DR,Comparador dual SOIC-8,1,SMT
+B2P-VH,"J1,J2",JST_VH_B2P-VH_1x02_P3.96mm_Vertical,JST B2P-VH(LF)(SN),"Header VH 2P top entry, THT; acopla con VHR-2N",2,THT
+GL5528,LDR1,R_LDR_5.1x4.3mm_P3.4mm_Vertical,GL5528,"Fotorresistencia 5 mm, THT",1,THT
