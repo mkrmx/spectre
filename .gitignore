@@ -1,0 +1,12 @@
+# KiCad
+*.kicad_prl
+*-backups/
+fp-info-cache
+# herramientas: salidas intermedias
+tools/fr.jar
+tools/**/board/
+tools/**/r_*/
+tools/**/*.dsn
+tools/**/*.ses
+tools/**/*.rpt
+tools/**/__pycache__/

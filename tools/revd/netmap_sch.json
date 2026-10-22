@@ -1,0 +1,435 @@
+{
+ "C1": {
+  "value": "0.33uF",
+  "fp": "Capacitor_SMD:C_0805_2012Metric",
+  "tstamps": [
+   "cf03f458-acf8-5b94-b51d-672776497035"
+  ],
+  "pins": {
+   "1": "+12V",
+   "2": "GND"
+  }
+ },
+ "C2": {
+  "value": "0.1uF",
+  "fp": "Capacitor_SMD:C_0805_2012Metric",
+  "tstamps": [
+   "1f7ecfe5-7493-56e7-89c1-b5f636ef6355"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "GND"
+  }
+ },
+ "C3": {
+  "value": "47uF 16V",
+  "fp": "Capacitor_SMD:CP_Elec_5x5.3",
+  "tstamps": [
+   "9179ba26-2507-53fd-9fcd-57c492f5c9f0"
+  ],
+  "pins": {
+   "1": "/LDR_DIV",
+   "2": "GND"
+  }
+ },
+ "C4": {
+  "value": "22uF 16V",
+  "fp": "Capacitor_SMD:CP_Elec_4x5.4",
+  "tstamps": [
+   "fb90a7d2-00f5-55b5-98a6-992bd935bd3f"
+  ],
+  "pins": {
+   "1": "/GATE",
+   "2": "GND"
+  }
+ },
+ "C5": {
+  "value": "0.1uF",
+  "fp": "Capacitor_SMD:C_0603_1608Metric",
+  "tstamps": [
+   "a1122b31-b3ff-5915-ba00-296259888334"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "GND"
+  }
+ },
+ "C6": {
+  "value": "22uF",
+  "fp": "Capacitor_SMD:C_0805_2012Metric",
+  "tstamps": [
+   "338ee0a6-8527-5db2-b103-426a31db4e33"
+  ],
+  "pins": {
+   "1": "/DELAY",
+   "2": "GND"
+  }
+ },
+ "D1": {
+  "value": "M7",
+  "fp": "Diode_SMD:D_SMA",
+  "tstamps": [
+   "15f1536a-eea0-5563-bb33-5f8af2656a8a"
+  ],
+  "pins": {
+   "1": "+12V",
+   "2": "/+12V_IN"
+  }
+ },
+ "D2": {
+  "value": "1N4148W",
+  "fp": "Diode_SMD:D_SOD-123",
+  "tstamps": [
+   "3a5e6b8d-b476-5bea-97c7-fcf928f5961d"
+  ],
+  "pins": {
+   "1": "/LATCH",
+   "2": "/NODO_B"
+  }
+ },
+ "D3": {
+  "value": "1N4148W",
+  "fp": "Diode_SMD:D_SOD-123",
+  "tstamps": [
+   "fd4911e1-0f60-5262-b06b-91865034b6af"
+  ],
+  "pins": {
+   "1": "/FAST",
+   "2": "/NODO_B"
+  }
+ },
+ "D4": {
+  "value": "1N4148W",
+  "fp": "Diode_SMD:D_SOD-123",
+  "tstamps": [
+   "991bb2ac-fbe5-54e8-816c-be7fb60da130"
+  ],
+  "pins": {
+   "2": "/DELAY",
+   "1": "/HALL_OUT"
+  }
+ },
+ "J1": {
+  "value": "12V IN",
+  "fp": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+  "tstamps": [
+   "c94a57ee-ba79-5a60-ab63-15e468c8316f"
+  ],
+  "pins": {
+   "1": "/+12V_IN",
+   "2": "GND"
+  }
+ },
+ "J2": {
+  "value": "LED 12V",
+  "fp": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+  "tstamps": [
+   "ddc9cede-fcc6-516d-a359-be1faea10956"
+  ],
+  "pins": {
+   "1": "+12V",
+   "2": "/LED_NEG"
+  }
+ },
+ "LDR1": {
+  "value": "GL5528",
+  "fp": "OptoDevice:R_LDR_5.1x4.3mm_P3.4mm_Vertical",
+  "tstamps": [
+   "f0833ea0-6f55-541d-8fc6-a09300ebb214"
+  ],
+  "pins": {
+   "1": "/LDR_DIV",
+   "2": "GND"
+  }
+ },
+ "Q1": {
+  "value": "MMBT2222A",
+  "fp": "Package_TO_SOT_SMD:SOT-23",
+  "tstamps": [
+   "094e7a49-c381-5f48-a5b4-8c803f63d51b"
+  ],
+  "pins": {
+   "3": "/NODO_A",
+   "1": "Net-(Q1-B)",
+   "2": "Net-(Q1-E)"
+  }
+ },
+ "Q2": {
+  "value": "MMBT2222A",
+  "fp": "Package_TO_SOT_SMD:SOT-23",
+  "tstamps": [
+   "8dae0fee-044f-54c3-84df-12a990f4fc7d"
+  ],
+  "pins": {
+   "2": "GND",
+   "3": "Net-(Q1-E)",
+   "1": "Net-(Q2-B)"
+  }
+ },
+ "Q3": {
+  "value": "MMBT2222A",
+  "fp": "Package_TO_SOT_SMD:SOT-23",
+  "tstamps": [
+   "0ad78a55-72c7-591a-b33a-5b300a910683"
+  ],
+  "pins": {
+   "3": "/NODO_B",
+   "2": "GND",
+   "1": "Net-(Q3-B)"
+  }
+ },
+ "Q4": {
+  "value": "IRLR2905",
+  "fp": "Package_TO_SOT_SMD:TO-252-2",
+  "tstamps": [
+   "ffe7cfe0-a8da-5e9e-a779-00808455a1e3"
+  ],
+  "pins": {
+   "1": "/GATE",
+   "2": "/LED_NEG",
+   "3": "GND"
+  }
+ },
+ "R1": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "e0b8f276-f18b-5d41-a98e-15e0fddc7149"
+  ],
+  "pins": {
+   "1": "/ARM",
+   "2": "Net-(Q1-B)"
+  }
+ },
+ "R2": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "0af473a3-d367-55e9-bd2e-19cf19fa5727"
+  ],
+  "pins": {
+   "1": "/CMP_OUT",
+   "2": "Net-(Q2-B)"
+  }
+ },
+ "R3": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "c4023d11-a27e-5d7b-83be-c432deb185fe"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/NODO_A"
+  }
+ },
+ "R4": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "845fd01f-1e3b-56c4-9844-0f0996fe315c"
+  ],
+  "pins": {
+   "1": "/NODO_A",
+   "2": "Net-(Q3-B)"
+  }
+ },
+ "R5": {
+  "value": "1k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "ce7f50ec-74cd-51e4-a96f-8dcd9651d875"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/NODO_B"
+  }
+ },
+ "R6": {
+  "value": "100k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "ea6e81ad-34ba-5559-ba0d-28111a93f332"
+  ],
+  "pins": {
+   "2": "/GATE",
+   "1": "/NODO_B"
+  }
+ },
+ "R7": {
+  "value": "1M",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "f59955ee-0e34-5861-86d9-2454adccf78f"
+  ],
+  "pins": {
+   "1": "/GATE",
+   "2": "GND"
+  }
+ },
+ "R8": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "c775eddc-c1a9-5a8c-9b1f-f6190d1d40c5"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/LDR_DIV"
+  }
+ },
+ "R9": {
+  "value": "10k trim",
+  "fp": "Potentiometer_SMD:Potentiometer_Bourns_3314J_Vertical",
+  "tstamps": [
+   "0ce71657-ffd0-5441-8316-51926b03924d"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/REF",
+   "3": "GND"
+  }
+ },
+ "R10": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "a60226ef-7817-5575-963c-12be3a298871"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/CMP_OUT"
+  }
+ },
+ "R11": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "fc81e859-b52f-55e1-9604-5072585b615b"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/HALL_OUT"
+  }
+ },
+ "R12": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "594fdcf4-eb0c-579b-a3c4-c82277a16f5c"
+  ],
+  "pins": {
+   "1": "/LATCH",
+   "2": "Net-(Q2-B)"
+  }
+ },
+ "R13": {
+  "value": "100k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "4b35f26d-6c88-5711-9642-5353aa5762e9"
+  ],
+  "pins": {
+   "1": "/CMP_OUT",
+   "2": "/LDR_DIV"
+  }
+ },
+ "R14": {
+  "value": "68k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "ca8751b8-6c3b-5177-9b41-0c2e188d3985"
+  ],
+  "pins": {
+   "1": "/FAST",
+   "2": "/GATE"
+  }
+ },
+ "R15": {
+  "value": "100k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "0b36ab65-2412-5fa2-921f-4e2a19652766"
+  ],
+  "pins": {
+   "2": "/DELAY",
+   "1": "/HALL_OUT"
+  }
+ },
+ "R16": {
+  "value": "100k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "f771d64c-8aeb-5532-b9ff-1669d2709011"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/VTH"
+  }
+ },
+ "R17": {
+  "value": "100k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "166604b1-506e-5c82-9387-fe7cedae4cdc"
+  ],
+  "pins": {
+   "1": "/VTH",
+   "2": "GND"
+  }
+ },
+ "R18": {
+  "value": "10k",
+  "fp": "Resistor_SMD:R_0603_1608Metric",
+  "tstamps": [
+   "c2079e5b-ef29-5e56-ba84-7c192b144a23"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/ARM"
+  }
+ },
+ "U1": {
+  "value": "L78M05",
+  "fp": "Package_TO_SOT_SMD:TO-252-2",
+  "tstamps": [
+   "ce56599d-f290-5eea-a85b-8704206a53b6"
+  ],
+  "pins": {
+   "3": "+5V",
+   "1": "+12V",
+   "2": "GND"
+  }
+ },
+ "U2": {
+  "value": "DRV5033FA",
+  "fp": "Package_TO_SOT_SMD:SOT-23-3",
+  "tstamps": [
+   "8ea710db-88cb-58ce-a086-79b9b8aa751a"
+  ],
+  "pins": {
+   "1": "+5V",
+   "2": "/HALL_OUT",
+   "3": "GND"
+  }
+ },
+ "U3": {
+  "value": "LM393",
+  "fp": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+  "tstamps": [
+   "969b5ae2-e52e-50ca-abd1-0309dff448bb",
+   "c8142757-c769-56e7-879b-78c90f28f9ef",
+   "74d65b7f-f26f-5727-ac7e-769915ad6309"
+  ],
+  "pins": {
+   "8": "+5V",
+   "7": "/ARM",
+   "1": "/CMP_OUT",
+   "5": "/DELAY",
+   "3": "/LDR_DIV",
+   "2": "/REF",
+   "6": "/VTH",
+   "4": "GND"
+  }
+ }
+}
