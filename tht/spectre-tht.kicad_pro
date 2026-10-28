@@ -256,6 +256,11 @@
     "legacy_lib_dir": "",
     "legacy_lib_list": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "232c9f7e-21a3-522e-8110-36b48a8af65f",
+      ""
+    ]
+  ],
   "text_variables": {}
 }

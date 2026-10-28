@@ -2,7 +2,25 @@
 
 Historial de todas las versiones de SPECTRE, de la más nueva a la más vieja.
 
-Solo las dos versiones rev D tienen archivos y etiqueta en este repositorio. Las versiones anteriores quedan documentadas aquí, pero sus archivos no están incluidos.
+Solo las versiones rev D y la THT rev E tienen archivos y etiqueta en este repositorio. Las versiones anteriores quedan documentadas aquí, pero sus archivos no están incluidos.
+
+## [tht-rev-e] — 2026-10-28 — THT rev E
+- **Apagado automático:** U4 CD4541 apaga la tira unos 10 minutos después de abrir la cajuela.
+  - Q5 invierte HALL_OUT para manejar MR: el contador se queda en reset mientras la cajuela está cerrada.
+  - En modo de ciclo único, TOUT se queda retenido en alto. Q6 lleva ARM a GND y la tira se apaga con fade.
+  - Cerrar la cajuela reinicia el conteo, así que cada apertura empieza de cero.
+  - Oscilador: R22 82 kΩ, C8 100 nF de película, R23 180 kΩ. Da T ≈ 618 s.
+  - J5 (jumper de prueba) pone A en 0, unos 10 s.
+- **Fade simétrico:** D5 + R6 39 kΩ forman el camino de apagado, separado del de encendido (D3 + R14 68 kΩ).
+- **Consumo en reposo:** baja de unos 14 mA a unos 5 mA.
+  - U1 LM7805 → LP2950-5.0 TO-92, con C2 de 0.1 µF → 10 µF.
+  - Q3 NPN → PNP 2N3906, y R5 1 kΩ a +5 V → 4.7 kΩ a GND.
+- **Placa:** 64 x 50 mm (antes 46 x 40) con esquinas redondeadas, sin barrenos y con franja libre de 1 mm.
+  - Acomodo por bloques funcionales.
+  - Sin vías.
+  - DRC sin errores.
+- **Esquemático propio de la versión THT:** `tht/spectre-tht.kicad_sch`.
+- Probada en protoboard antes de subirla.
 
 ## [tht-rev-d] — 2026-10-16 — THT rev D
 Versión through-hole del circuito rev D, para soldar a mano.

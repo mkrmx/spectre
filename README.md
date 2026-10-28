@@ -2,29 +2,31 @@
 
 Luz LED para la cajuela de un auto que se enciende sola al abrirla, y solo cuando está oscuro.
 
-Un sensor Hall detecta la apertura (un imán en la carrocería se aleja del sensor) y una fotorresistencia (LDR) decide si hay poca luz. Si las dos condiciones se cumplen, un MOSFET enciende la tira LED de 12 V con un encendido y apagado suave (fade). Funciona con lógica discreta: comparador LM393, transistores NPN y un MOSFET de nivel lógico. No lleva microcontrolador ni PWM.
+Un sensor Hall detecta la apertura (un imán en la carrocería se aleja del sensor) y una fotorresistencia (LDR) decide si hay poca luz. Si las dos condiciones se cumplen, un MOSFET enciende la tira LED de 12 V con un encendido y apagado suave (fade). Funciona con lógica discreta: comparador LM393, transistores bipolares y un MOSFET de nivel lógico. No lleva microcontrolador ni PWM. La versión THT rev E agrega un apagado automático unos 10 minutos después de abrir, con un temporizador CD4541.
 
 ![Esquemático](docs/esquematico.png)
 
 ## Diseños
 
-El mismo circuito (rev D) está en dos versiones de placa, cada una en su carpeta y con su propia etiqueta:
+Hay dos versiones de placa, cada una en su carpeta y con su propia etiqueta. La SMT sigue en rev D. La THT pasó a rev E, que agrega el apagado automático, el fade simétrico y un consumo en reposo menor; los detalles están en [`tht/README.md`](tht/README.md).
 
 | Carpeta | Versión | Placa | Sensores | Etiqueta |
 |---|---|---|---|---|
 | [`smt/`](smt/) | rev D | 42 x 32 mm, SMT, ensamblada de fábrica | DRV5033 y LDR soldados en la placa | `smt-rev-d` |
-| [`tht/`](tht/) | rev D | 46 x 40 mm, THT, para soldar a mano | Hall y LDR por cable (J3, J4) | `tht-rev-d` |
+| [`tht/`](tht/) | rev E | 64 x 50 mm, THT, para soldar a mano | Hall y LDR por cable (J3, J4) | `tht-rev-e` (rev D: `tht-rev-d`) |
 
 Las dos son de 2 capas, sin barrenos de montaje y con una franja libre de 1 mm en todo el contorno para los rieles de la caja. Ambas usan conectores JST VH (B2P-VH, carcasa VHR-2N) para los 12 V y la tira LED. El historial de versiones está en [`CHANGELOG.md`](CHANGELOG.md).
 
 ```
 docs/   esquemático (PDF/PNG) y logo
 smt/    proyecto KiCad 7 completo, Gerbers, BOM y CPL para ensamble, vistas
-tht/    PCB KiCad 7, Gerbers, lista de componentes, mapa de ensamble
+tht/    proyecto KiCad 7 (esquemático y PCB), Gerbers, lista de componentes, vistas y mapa de ensamble
 tools/  scripts para generar, acomodar, rutear y verificar las placas (ver tools/README.md)
 ```
 
 ## Cómo funciona
+
+Esta sección describe la rev D (SMT). La THT rev E usa los mismos bloques y agrega el temporizador de apagado; ver [`tht/README.md`](tht/README.md#cómo-funciona-el-apagado).
 
 | Bloque | Piezas | Qué hace |
 |---|---|---|
@@ -74,14 +76,15 @@ En la versión THT, U2 se sustituye por J3 (1 = +5V, 2 = GND, 3 = HALL_OUT) y LD
 - **SMT:** [`smt/fab/spectre-BOM.csv`](smt/fab/spectre-BOM.csv) (con números de parte) y [`smt/fab/spectre-CPL.csv`](smt/fab/spectre-CPL.csv) para el ensamble.
 - **THT:** tabla completa en [`tht/README.md`](tht/README.md#lista-de-componentes).
 
-| Función | SMT | THT |
+| Función | SMT (rev D) | THT (rev E) |
 |---|---|---|
-| Regulador | L78M05 (DPAK) | LM7805 (TO-220) |
+| Regulador | L78M05 (DPAK) | LP2950-5.0 (TO-92) |
 | MOSFET | IRLR2905 (DPAK) | IRLZ44N (TO-220) |
 | Comparador | LM393 (SOIC-8) | LM393 (DIP-8) |
-| NPN x3 | MMBT2222A (SOT-23) | 2N2222A / PN2222A (TO-92) |
+| Transistores | MMBT2222A x3 (SOT-23) | PN2222A x4 y 2N3906 PNP (TO-92) |
+| Temporizador | — | CD4541BE (DIP-14) |
 | Diodo de entrada | M7 (SMA) | 1N4007 |
-| Diodos de señal x3 | 1N4148W (SOD-123) | 1N4148 |
+| Diodos de señal | 1N4148W x3 (SOD-123) | 1N4148 x4 |
 | Hall | DRV5033FAQDBZR en placa | DRV5033 (TO-92) o A3144, por cable |
 | LDR | GL5528 en placa | GL5528 por cable |
 | C3 / C4 | Panasonic EEE-1CA470WR / EEE-1CA220WR | Electrolíticos radiales 5 mm |
