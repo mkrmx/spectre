@@ -54,7 +54,7 @@ A 53 Hz el oscilador queda por debajo del rango en el que la hoja de datos garan
 - **Verificación:**
   - DRC: 0 errores y 0 conexiones pendientes (`fab/drc.rpt`).
   - Netlist del esquemático contra PCB, pad por pad: 51 componentes, 31 redes, 0 diferencias.
-- **Gerbers:** pendientes de generar.
+- **Gerbers:** `fab/spectre-tht-gerbers.zip` incluye cobre, máscara, serigrafía, contorno, taladros (Excellon, 129 barrenos) y mapa de taladros. Es lo que se sube a la fábrica.
 
 ![Vista superior](img/vista-superior.png)
 
@@ -145,4 +145,5 @@ El pin 1 de cada conector es el pad cuadrado.
 | `img/vista-superior.png` | Vista de la cara de componentes |
 | `img/vista-inferior.png` | Vista de la cara inferior |
 | `img/mapa-ensamble.png` | Mapa de ensamble; en rojo lo nuevo y en ámbar lo que cambió |
+| `fab/spectre-tht-gerbers.zip` | Gerbers y taladros para la fábrica |
 | `fab/drc.rpt` | Reporte del DRC |

@@ -19,6 +19,7 @@ Solo las versiones rev D y la THT rev E tienen archivos y etiqueta en este repos
   - Acomodo por bloques funcionales.
   - Sin vías.
   - DRC sin errores.
+  - Gerbers en `tht/fab/spectre-tht-gerbers.zip`.
 - **Esquemático propio de la versión THT:** `tht/spectre-tht.kicad_sch`.
 - Probada en protoboard antes de subirla.
 
